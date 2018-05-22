@@ -10,7 +10,7 @@ router = routers.DefaultRouter()
 router.register('v1/asset-permissions', api.AssetPermissionViewSet, 'asset-permission')
 
 urlpatterns = [
-    # 查询某个用户授权的资产和资产组1
+    # 查询某个用户授权的资产和资产组1222
     url(r'^v1/user/(?P<pk>[0-9a-zA-Z\-]{36})/assets/$',
         api.UserGrantedAssetsApi.as_view(), name='user-assets'),
     url(r'^v1/user/assets/$', api.UserGrantedAssetsApi.as_view(),
